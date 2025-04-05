@@ -1,0 +1,2229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0f0f0f;
+}
+.titulo_para_o_console_de_questoes{
+
+    width: 15vw;
+    left: 5%;
+    color: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    margin-top: 2%;
+    
+}
+::-webkit-scrollbar{
+    background-color:#131212;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#ffbb00ec;
+    border-radius: 8px;
+}
+/*relojo tela com display principal*****************************************************************************
+****************************************************************************************************************/
+.box_relojoclass{
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 75%;
+    background-color:none;
+    padding: none;
+    display: flex;
+    top: 1.7%;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 2;
+    background-color:none;
+    transition: 1s;
+}
+.atv_relojo_slide_conometro{
+    left: 63%;
+}
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    font-size: 150%;
+    box-shadow: 0px 8px 10px rgb(0,0,0,.5);
+    left:25% ;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: none;
+    z-index: 2;
+    background-color: #0f0f0f;
+    top: 1.5%;
+
+}
+.box_play_img_for_relogio{
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    background-color: none;
+    align-items: center;
+    top: 65%;
+    left: 43%;
+    z-index: 2;
+    background-color:#0f0f0f;
+
+}
+/*cronometro pagina layout principal**************************************************
+**************************************************************************************/
+.conometro_class_in_box_relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 13%;
+    height: 10%;
+    font-size: 150%;
+    left:80% ;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: red;
+    z-index: 1;
+    top: 1.7%;
+}
+.btn_img_atv_cronometro_class{
+    background-color: #0f0f0f;
+    border: none;
+    width: 1px;
+    height: 1px;
+}
+.box_for_num_crono{
+    position: relative;
+    left: 10%;
+    top: 0%;
+}
+.btn_controla_crono{
+    background-color: #000000;
+    color: aliceblue;
+    width: 50px;
+    height: 20px;
+    position: relative;
+    left: 0%;
+    top: 50%;
+    margin: 2px;
+}
+/*display para o texto das questoes*****************************************************************************
+*******************************************************************************************************************/
+.caixa_que_contem_displays_de_indentificacao_e_texto{
+    width: 70%;
+    display:block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    left: 15.5%;
+
+}
+
+.display_indentifica_a_questao{   
+
+    width: 15vw;
+    height: 8%;
+    left: 78.5%;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 3px;
+    margin-top: 1%;
+}
+.text_indentifica_questao{
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    margin-left: 5px;
+}
+.display_para_texto_das_questoes{
+
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    color: aliceblue;
+    display:block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    margin-top: 5%;
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+    box-shadow: 0 0 10px black;
+}
+.display_para_texto_das_questoes::-webkit-scrollbar{
+    background-color:#000000;
+    width: 3px;
+}
+.display_para_texto_das_questoes::-webkit-scrollbar-thumb{
+
+    background-color: rgb(128, 0, 0);
+    
+}
+.internal_box_for_organisation_text_of_questions_in_console_of_inssues {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.11);
+    color: aliceblue;
+    margin: 20px auto 0;
+    padding: 10px; /* Adiciona espaçamento interno para o texto */
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 0 10px black;
+
+}
+
+.content_texto_para_as_alternativas{
+    display: flex;
+    position: relative;
+    word-wrap: break-word; /* Garante quebra de linha para textos longos */
+    width: 92%;
+    margin-left: 5px;
+    
+
+}
+.caixa_para_separar_button_de_texto{
+    display: flex;
+    position: relative;
+    width: 7%;
+    margin-bottom: 0%;
+    align-items: center;
+    
+}
+.letter_box_to_mark_alternative{
+
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(24, 24, 24);
+    padding: 5px;
+    transform: 0.8;
+    align-items: center;
+
+
+}
+.letter_box_to_mark_alternative:hover{
+
+    color: rgb(0, 0, 0);
+    background-color: rgb(167, 167, 167);
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+.label_position_letter_in_box_mark_alternative_box{
+    
+    position: relative;
+    cursor: pointer;
+    left: 30%;
+    
+}
+.img_class_box_lateral{
+
+    transform: scale(3); /* Aumenta o SVG em 1.5x */
+    transform-origin: center; /* Esc*/
+}
+
+.caixas_para_quardar_icones_imagens_png {
+    width: 95%;
+    height: 12%;
+    background-color: none;
+    margin-top: 10%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;
+    transition: 0.5;
+}
+.distancia_especial{
+
+    margin-top: 100%;
+    
+}
+.caixas_para_quardar_icones_imagens_png:hover{
+
+    border: 2px solid red;
+    box-shadow: 0 0 10px red;
+}
+.letter_in_box_rigth_menu{
+    color: white;
+    font-size: 200%;
+    font-family: "Yeseva One", serif;
+
+}
+
+.esquerda {
+    left: 0; 
+}
+
+.direita {
+    right: 0; 
+}
+.caixa_forma_para_menu_lateral {
+    width: 5.5%;
+    height: 100vh;
+    background-color: #131212 ;
+    border-radius: 5px;
+    border: 2px solid rgb(95, 95, 95);
+    position: fixed;
+    top: 0; 
+    box-shadow: 0 0 40px black;
+
+}
+
+/*fim das caixas leterais**************************************************************************************
+***************************************************************************************************************/
+
+
+.box_that_sorrounds_the_inssues_box_and_auxiliary_buttons{
+
+    margin-top: 5%;
+    width: 70%;
+    background-color: none;
+    border-radius: 5px;
+    display: block; 
+    position: relative;
+    left: 12%;
+    
+}
+
+.box_that_sorrounds_auxiliary_buttons{
+    width: 100%;
+    background-color: none;
+    left: 5%;
+    display: block;
+    position: relative;
+
+    
+}
+
+
+.label_position_for_response{
+    
+    width: 14%;
+    height: 30px;
+    display: inline-block;
+    background-color: rgb(48, 0, 0);
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px ;
+    color: aliceblue;
+    transition: 0.8s;
+
+}
+.label_position_for_response:hover{
+
+    background-color: red;
+}
+
+.box_for_auxiliary_buttons{
+    
+    width: 13.6% ;
+    height: 35px;
+    display: inline-block;
+    background-color: #110101;
+    margin-left: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: aliceblue;
+    align-content: center;
+    transition: 0.4s;
+    
+    
+}
+.box_for_auxiliary_buttons:hover{
+
+    background-color: red;
+}
+.text_aling_in_auxiliary_box{
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;
+}
+.box_next_and_return{
+    width: 14% ;
+}
+.external_box_that_gives_the_shape_to_the_console_of_inssues {
+    
+    width: 100%;
+    border: solid #8f0000;
+    background-color: #131212;
+    border-radius: 5px;
+    margin: 0;
+    padding: 20px; /* Adicione padding para espaçamento interno */
+    display: block; /* Permite que se ajuste ao conteúdo interno */
+    left: 5%;
+    box-shadow: 0 0 30px black;
+    position: relative;
+}
+
+
+.First_box_with_special_sreeding_of_top {
+    top: 50px !important;
+}
+
+
+
+
+
+input[type="radio"] {
+    display: none;
+}
+
+.create_div_on_the_question_console_for_the_contents_of_the_comments_response_anotation_statistical{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #070707;
+    z-index: 10; /* Coloca a div por cima do restante do conteúdo */
+    border-radius: 5px; 
+}
+.div_for_content_response{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     /* Fundo semitransparente para destacar */
+    z-index: 15; /* Coloca a div por cima do restante do conteúdo */
+    border-radius: 5px
+}
+/*calculator******************************************************************************************************
+*****************************************************************************************************************/
+
+.button_ativate_calculator{
+    z-index: 20;
+}
+
+.box_that_gives_the_shape_to_the_calculator {
+    position: relative;
+    width: 50%;
+    height: 80%;
+    background-color: #111111;
+    border: 2px solid #8f0000;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto; /* Centraliza a calculadora */
+    z-index: 40;
+}
+
+.div_that_gives_the_shape_to_the_numbers_contents_and_symbols {
+    width: 100%;
+    margin-top: 4%;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    background-color: transparent; /* Corrigido */
+    display: block;
+    position: relative;
+}
+
+.number_box_for_calculator {
+    width: 35%;
+    height: 80px; /* Reduzida para um tamanho mais apropriado */
+    background-color: red;
+    margin-bottom: 5%;
+    box-shadow: 0 0 15px black;
+    display: inline-block;
+    margin-left: 2.5%;
+}
+
+.symbols_box_for_calculator {
+    width: 55%;
+    background-color: transparent; /* Corrigido */
+    margin-bottom: 5%;
+    box-shadow: 0 0 15px black;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.button_of_zero_to_nine_for_calculator{
+    width: 20%;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: aliceblue;
+    margin-top: 1.5px;
+    margin-left: 1.5px;
+    cursor: pointer;
+    font-size: 140%;
+}
+.button_of_zero_to_nine_for_calculator:hover{
+
+    border: 1px solid yellow;
+    color: white;
+    box-shadow: 0 0 15px yellow;
+
+}
+.button_calculator_clear_all{
+    width: 61%;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: aliceblue;
+    margin-top: 1.5px;
+    margin-left: 1.5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.button_calculator_clear_all:hover{
+    
+    border: 1px solid red;
+    color: white;
+    box-shadow: 0 0 15px red;
+
+}
+.delete_hover_diferecial:hover{
+    border: 1px solid red !important;
+    color: white;
+    box-shadow: 0 0 15px red !important;
+}
+.div_for_feedback_screen_in_calculator{
+    width: 80%;
+    height: 40px;
+    background-color: #1f1e1e;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 166, 0);
+    box-shadow: 0 0 10px  rgb(0, 0, 0);
+    left: 10%;
+    margin-top: 5%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 5px;
+}
+.text_for_screen_feedback{
+    color: aliceblue;
+    text-align: right;
+}
+#button_delete{
+    z-index: 20;
+}
+
+/*anotation*****************************************************************************************************
+****************************************************************************************************************/
+
+.box_for_anotacoes_space{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: none;
+    margin: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #000000;
+    border: none;
+    z-index: 5;
+    display: flex;
+}
+
+.box_anotacoes{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    background-color: #000000;
+    border: 2px solid rgb(83, 83, 83);
+    padding: 0%;
+    margin: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+}
+
+.box_para_texto_anotacao_edit{
+    width: 15800%;
+    height: 99.5%;
+    position: relative;
+    background-color: none;
+    z-index: 5;
+    left: 90%;
+    transition: 1s;
+    top: 0.5%;
+    overflow: hidden;
+    display: none;
+}
+.box_para_texto_anotacao_edit_atv{
+    display: flex;
+}
+.box_slide_for_text_anotacao_edtit{
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    position: absolute;
+    left: -100%;
+    transition: 1s;
+}
+.box_slide_for_text_anotacao_edtit_atv{
+    left:0%; 
+}
+.box_in_anotacao_slide_titulo{
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    background-color: rgb(71, 71, 71);
+    font-family: "Playfair Display", serif;
+    color: aliceblue;
+    font-size: 150%;
+}
+.box_in_anotacao_slide_titulo_titulo{
+    height: 100%;
+    width: 20%;
+    background-color:none;
+    font-family: "Playfair Display", serif;
+    color: aliceblue;
+    font-size: 150%;
+}
+.for_text_area_in_slide_anotacao{
+    width: 90%;
+    height: 80%;
+    top: 15%;
+    position: absolute;
+    background-color: none;
+}
+.box_titulo_info_tag{
+    height: 100%;
+    width: 80%;
+    left: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: whitesmoke;
+    
+}
+.box_for_ind_da_imp{
+    background-color: #8f0000;
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    top: 95%;
+}
+.box_in_slide_anotaca_switch_imp{
+    height: 80%;
+    width: 10%;
+    display: block;
+    height: 80;
+    position: absolute;
+    background-color: #8f0000;
+    left:90% ;
+    top: 15%;
+}
+
+.linha_vertical_estilizacao{
+    position: relative;
+    width: 2px;
+    height: 90%;
+    top: 5%;
+    left: 19%;
+}
+.linha_horizontal_superior_maior_estilizacao{
+    position: absolute;
+    width: 96.5%;
+    height: 2px;
+    left: 2.5%;
+    top: 2%;
+    border-top-right-radius: 8px;
+}
+.linha_vertical_estilizacao_menor_canto_direito{
+    position: absolute;
+    width: 4px;
+    height: 34%;
+    top: 2.4%;
+
+    border-top-right-radius: 8px;
+    left: 97%;
+}
+.linha_horizontal_estilizacao_menor_canto_direito{
+    position: absolute;
+    width: 66.5%;
+    height: 2px;
+    top: 36.4%;
+
+    border-top-right-radius: 8px;
+    left: 33.5%;
+
+}
+.linha_vertical_estilizacao_maior_central{
+    width: 4px;
+    height: 96%;
+    position: absolute;
+    top: 2.5%;
+    left: 33%;
+}
+.color_estilizacao_anota_box{
+    background: #1d1d1d !important;
+}
+.box_ultimas_anotacoes{
+    width: 15vw;
+    background-color: none;
+    height: 76%;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: none;
+    margin: none;
+    margin-top: 70px;
+    padding: 0%;
+    left: -2px;
+    position: absolute;
+    top: -2px;
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+}    
+.box_ultimas_anotacoes::-webkit-scrollbar{
+    background-color:#131212;
+    width: 2px;
+}
+.box_ultimas_anotacoes::-webkit-scrollbar-thumb{
+    background-color: #ededed;
+    border-radius: 4px !important;
+}
+.box_anotacoes_feitas{
+    position: relative;
+    height: 40px;
+    width: 80%;
+    margin-top: 10%;
+    background-color: #080808;
+    border-radius: 5px;
+    border: 2px solid rgb(75, 75, 75);             /*box anotações feitas */
+    left: 10px;                                      /*indentifidas por cores*/   
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.box_anotacoes_feitas_quando_imp_red_atv{
+    border: 1px solid rgb(255, 0, 0);
+
+}
+.box_anotacoes_feitas_quando_imp_green_atv{
+    border: 1px solid  rgb(2, 255, 15);
+
+}
+.box_anotacoes_feitas_quando_imp_yellow_atv{
+    border:1px solid rgb(255, 238, 0); 
+
+}
+.box_editar_mudar_imp_exclui{
+    width: 13.4%;
+    height: 90%;
+    position: absolute;
+    background-color:none;
+    left: 19.4%;
+    top: 6%;
+}
+.box_edicao_dentro_do_conj_editar{
+    width: 95%;
+    height: 15%;
+    position: relative;
+    margin-top: 2%;
+    background-color: #070707;
+    border-radius: 5px;
+    border: 2px solid rgb(116, 116, 116);
+}
+.box_edicao_dentro_do_conj_editar:hover{
+    background-color: rgb(88, 88, 88);
+    border: 3px solid whitesmoke;
+}
+.btn_excluir_anotacoes{
+    color: aliceblue;
+    font-size: 150%;
+    position: relative;
+    left: 3%;
+    top: 7%;
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+}
+.btn_editar_anotacoes{
+    color: aliceblue;
+    font-size: 150%;
+    position: relative;
+    left: 3%;
+    top: 7%;
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+.btn_trocarImportancia_anotacoes{
+    padding: none;
+    color: aliceblue;
+    font-size: 150%;
+    position: relative;
+    left: 3%;
+    top: 1%;
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+.titulo_in_anotacao{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color:none;
+    
+}
+.hora_data_anotacao{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: none;
+    top: 50.5%;
+}
+.titulo_box_for_anotacoes{
+    font-size: 200%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: aliceblue;
+    font-family: "Playfair Display", serif;
+
+}
+.box_btn_cores{
+     width: 33vw;
+     height: 40px;
+     position: absolute;
+     left: 33.8%;
+     top: 6%;
+     background-color: rgb(17, 17, 17);
+     border: none;
+     border-radius: 5px;
+}
+.box_btn_titulo_anotacoes{
+    width: 33vw;
+     height: 40px;
+     position: relative;
+     left: 33.8%;
+     margin-top: 8%;
+     background-color: rgb(17, 17, 17);
+     border: none ;
+     border-radius: 5px;
+}
+
+
+
+.box_for_text_area{
+    width: 45vw;
+     height: 57%;
+     position: absolute;
+     left: 33.8%;
+     top: 39%;
+     background-color: rgb(17, 17, 17);
+     border: 3px solid rgb(49, 49, 49)  ;
+     border-radius: 5px;
+}
+.box_for_text_area_atv_for_red{
+    border: 3px solid #f00 !important;
+}    
+.box_for_text_area_atv_for_green{
+    border: 3px solid  rgb(2, 255, 15) !important  ;
+}
+.box_for_text_area_atv_for_yellow{
+    border: 3px solid  rgb(255, 238, 0) !important; 
+}
+
+
+.imo_cr_red_btn{
+    background-color: rgb(143, 0, 0);
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border: 2px solid rgb(71, 0, 0)  ;
+    left: 18%;
+    top: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}    
+.imo_cr_red_btn:hover{
+    background-color: rgb(255, 0, 0);
+}
+.atv_imo_red_btn{
+    background-color: rgb(255, 0, 0);
+}
+
+.imo_cr_green_btn{
+    background-color: rgb(0, 119, 6);
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border: 2px solid rgb(0, 49, 2);
+    left: 22%;
+    top: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.imo_cr_green_btn:hover{
+    background-color:  rgb(2, 255, 15);
+}
+.atv_imo_green_btn{
+    background-color:  rgb(2, 255, 15);
+}
+
+.imo_cr_yellow_btn{
+    background-color: rgb(141, 132, 0);
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border: 2px solid rgb(85, 79, 0);
+    left: 20%;
+    top: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.imo_cr_yellow_btn:hover{
+    background-color:rgb(255, 238, 0); 
+}
+.atv_imo_yellow_btn{
+    background-color:rgb(255, 238, 0); 
+}
+
+.box_btn_cores_subtitulo{
+    background-color: none;
+    border: none;
+    width: 30%;
+    position:relative;
+    color: aliceblue;
+    left: 5px;
+    top: 4px;
+    font-size: 150%;
+    display: inline;
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+.input_anotacoes_titulo_class{
+    width: 75%;
+    position: relative;
+    left: 2%;
+    top: 3px;
+    color: #ffffff;
+    background-color: #131212;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+textarea{
+    position: absolute;
+    width: 99%;
+    height: 96.5%;
+    background-color: #1b1b1b;
+    color: aliceblue;
+}
+.bloqueia_textarea_class{
+    position: absolute;
+    width: 99%;
+    height: 100%;
+    background-color: none;
+    z-index: 3;
+}
+.bloqueia_textarea_class:hover{
+    background-color: #494949;
+}
+.desativa_bloqueia_textarea_class{
+    display: none;
+}
+.btn_adicionar_anotação_class{
+    position: relative;
+    width: 7vw;
+    height: 10vh;
+    top: 33px;
+    left: 36%;
+    background-color: #000000;
+    color: whitesmoke;
+    cursor: pointer;
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+.btn_adicionar_anotação_class:hover{
+    background-color: rgb(88, 88, 88);
+    border: 3px solid whitesmoke;
+}
+
+.atv_btn_adicionar_anotação_class{
+    background-color: aliceblue;
+    color: #000000;
+}
+.ativado_anotacao_for_idn_edit{
+    background-color: aliceblue;
+    color: #000000;
+}
+
+/*menu lateral direito*******************************************************************************************
+*******************************************************************************************************************/
+
+.ativado_menu_lateral_direito{
+    background-color: #f00 !important;
+    border-radius: 5px;
+}
+.box_slide_menu_horizontal{
+    background-color: #f00;
+    width: 0%;
+    height: 2px !important;
+    position: fixed;
+    left: 73.7%;
+    top: 30px;
+    transition: 0.5s;
+    z-index: 10;
+
+}
+.atv_box_slide_menu_horizontal{
+   
+    width: 21%;
+    display: flex !important;
+}
+.box_slide_menu_vertical{
+    background-color: #f00;
+    width: 2px;
+    height: 0vh ;
+    position: fixed;
+    left: 73.7%;
+    top: 30px;
+    transition: 0.5s;
+    z-index: 10;
+}
+.atv_box_slide_menu_vertical{
+    height: 90vh !important;
+}
+.box_slide_full_menu_lateral{
+    background: black;
+    width: 20%;
+    height: 87vh ;
+    position: fixed;
+    left: 74%;
+    top: 32px;
+    display: flex;
+    z-index: 50;
+    
+}
+
+.desativa{
+    display: none;
+}
+.posiciona_text_in_menu_lateral_esq{
+    color: aliceblue;
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    font-size: 200%;
+}
+.posiciona_box_menu_lateral_box_full_itens_primeiro{
+    color: aliceblue;
+    position: relative;
+    border: 2px solid rgb(116, 116, 116);
+    margin-top: 150px;
+    font-size: 150%;
+    left: 5px;
+    width: 90%;
+    height: 40px;
+    background-color: #070707;
+    border-radius: 5px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    cursor: pointer;
+    
+}
+.posiciona_box_menu_lateral_box_full_itens_primeiro:hover{
+    background-color: rgb(88, 88, 88);
+    border: 3px solid whitesmoke;
+}
+.posiciona_box_menu_lateral_box_full_itens{
+    color: aliceblue;
+   position: relative;
+   border: 2px solid rgb(116, 116, 116);
+    margin-top: 20px;
+    top: 100px;
+    font-size: 150%;
+    left: 5px;
+    width: 90%;
+    height: 40px;
+    background-color: none;
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    cursor: pointer;
+    
+    
+}
+.posiciona_box_menu_lateral_box_full_itens:hover{
+    background-color: rgb(88, 88, 88);
+    border: 3px solid whitesmoke;
+}
+.arrumando_position_box_esquerda{
+    position: relative;
+    display: inline;
+    width: 90vw;
+    height: 93vh;
+    padding: 0%;
+    
+}
+.ajeita_ajeita_text_itens_menu_lateral_esq{
+    position: absolute;
+    left: 5px;
+    top: 2px;
+}
+.titulo_menu_laterl_direito{
+    font-family: "Playfair Display", serif;
+    left: -15px !important;
+    display: block;
+    position: relative;
+    background-color: none;
+}
+.esmaecer_class{
+
+    width: 88.5vw;
+    height: 100vw;
+    position: absolute;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    z-index: 40;
+    left: 5.39%;
+    margin: none;
+    display: flex;
+    opacity: 0.7;
+    transition: 1s;
+    top: 0;
+}
+@media (max-width: 576px) and (max-height: 1024px) {
+    .titulo_para_o_console_de_questoes{
+
+        width: 20%;
+        left: 8%;
+        color: white;
+        display: inline;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        background-color: none;
+        margin-top: 4%;
+        font-size: 65%;
+    }
+    ::-webkit-scrollbar{
+        background-color:#131212;
+        width: 8px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color:#ffbb00ec;
+        border-radius: 8px;
+    }
+    /*relojo tela com display principal*****************************************************************************
+    ****************************************************************************************************************/
+    .box_relojoclass{
+        width: 10%;
+        height: 5%;
+        position: absolute;
+        left: 75%;
+        background-color:none;
+        padding: none;
+        display: flex;
+        top: 1.7%;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        z-index: 2;
+        background-color:none;
+        transition: 1s;
+    }
+    .atv_relojo_slide_conometro{
+        left: 63%;
+    }
+    .relogio{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        font-size: 150%;
+        box-shadow: 0px 8px 10px rgb(0,0,0,.5);
+        left:25% ;
+        border-radius: 5px;
+        color: aliceblue;
+        background-color: none;
+        z-index: 2;
+        background-color: #0f0f0f;
+        top: 1.5%;
+    
+    }
+    .box_play_img_for_relogio{
+        position: absolute;
+        width: 20%;
+        height: 15%;
+        background-color: none;
+        align-items: center;
+        top: 65%;
+        left: 43%;
+        z-index: 2;
+        background-color:#0f0f0f;
+    
+    }
+    /*cronometro pagina layout principal**************************************************
+    **************************************************************************************/
+    .conometro_class_in_box_relogio{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        width: 13%;
+        height: 10%;
+        font-size: 150%;
+        left:80% ;
+        border-radius: 5px;
+        color: aliceblue;
+        background-color: red;
+        z-index: 1;
+        top: 1.7%;
+    }
+    .btn_img_atv_cronometro_class{
+        background-color: #0f0f0f;
+        border: none;
+        width: 1px;
+        height: 1px;
+    }
+    .box_for_num_crono{
+        position: relative;
+        left: 10%;
+        top: 0%;
+    }
+    .btn_controla_crono{
+        background-color: #000000;
+        color: aliceblue;
+        width: 50px;
+        height: 20px;
+        position: relative;
+        left: 0%;
+        top: 50%;
+        margin: 2px;
+    }
+    /*display para o texto das questoes*****************************************************************************
+    *******************************************************************************************************************/
+    .caixa_que_contem_displays_de_indentificacao_e_texto{
+        width: 70%;
+        display:block;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        left: 15.5%;
+    
+    }
+    
+    .display_indentifica_a_questao{   
+    
+        width: 15vw;
+        height: 8%;
+        left: 78.5%;
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: 3px;
+        margin-top: 1%;
+    }
+    .text_indentifica_questao{
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        font-size: 200%;
+        margin-left: 5px;
+    }
+    .display_para_texto_das_questoes{
+    
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+        color: aliceblue;
+        display:block;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        background-color: none;
+        margin-top: 5%;
+        overflow: visible;
+        overflow: hidden;
+        overflow: scroll;
+        overflow: auto;
+        box-shadow: 0 0 10px black;
+    }
+    .display_para_texto_das_questoes::-webkit-scrollbar{
+        background-color:#000000;
+        width: 3px;
+    }
+    .display_para_texto_das_questoes::-webkit-scrollbar-thumb{
+    
+        background-color: rgb(128, 0, 0);
+        
+    }
+    .internal_box_for_organisation_text_of_questions_in_console_of_inssues {
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.11);
+        color: aliceblue;
+        margin: 20px auto 0;
+        padding: 10px; /* Adiciona espaçamento interno para o texto */
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        box-shadow: 0 0 10px black;
+    
+    }
+    
+    .content_texto_para_as_alternativas{
+        display: flex;
+        position: relative;
+        word-wrap: break-word; /* Garante quebra de linha para textos longos */
+        width: 92%;
+        margin-left: 5px;
+        
+    
+    }
+    .caixa_para_separar_button_de_texto{
+        display: flex;
+        position: relative;
+        width: 7%;
+        margin-bottom: 0%;
+        align-items: center;
+        
+    }
+    .letter_box_to_mark_alternative{
+    
+        width: 50px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: rgb(24, 24, 24);
+        padding: 5px;
+        transform: 0.8;
+        align-items: center;
+    
+    
+    }
+    .letter_box_to_mark_alternative:hover{
+    
+        color: rgb(0, 0, 0);
+        background-color: rgb(167, 167, 167);
+        border: 2px solid rgb(255, 255, 255);
+    
+    }
+    
+    .label_position_letter_in_box_mark_alternative_box{
+        
+        position: relative;
+        cursor: pointer;
+        left: 30%;
+        
+    }
+    .img_class_box_lateral{
+    
+        transform: scale(3); /* Aumenta o SVG em 1.5x */
+        transform-origin: center; /* Esc*/
+    }
+    
+    .caixas_para_quardar_icones_imagens_png {
+        width: 95%;
+        height: 12%;
+        background-color: none;
+        margin-top: 10%;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center; /* Alinha horizontalmente */
+        align-items: center;
+        transition: 0.5;
+    }
+    .distancia_especial{
+    
+        margin-top: 100%;
+        
+    }
+    .caixas_para_quardar_icones_imagens_png:hover{
+    
+        border: 2px solid red;
+        box-shadow: 0 0 10px red;
+    }
+    .letter_in_box_rigth_menu{
+        color: white;
+        font-size: 200%;
+        font-family: "Yeseva One", serif;
+    
+    }
+    
+    .esquerda {
+        left: 0; 
+    }
+    
+    .direita {
+        right: 0; 
+    }
+    .caixa_forma_para_menu_lateral {
+        width: 5.5%;
+        height: 100vh;
+        background-color: #131212 ;
+        border-radius: 5px;
+        border: 2px solid rgb(95, 95, 95);
+        position: fixed;
+        top: 0; 
+        box-shadow: 0 0 40px black;
+    
+    }
+    
+    /*fim das caixas leterais**************************************************************************************
+    ***************************************************************************************************************/
+    
+    
+    .box_that_sorrounds_the_inssues_box_and_auxiliary_buttons{
+    
+        margin-top: 5%;
+        width: 70%;
+        background-color: none;
+        border-radius: 5px;
+        display: block; 
+        position: relative;
+        left: 12%;
+        
+    }
+    
+    .box_that_sorrounds_auxiliary_buttons{
+        width: 100%;
+        background-color: none;
+        left: 5%;
+        display: block;
+        position: relative;
+    
+        
+    }
+    
+    
+    .label_position_for_response{
+        
+        width: 14%;
+        height: 30px;
+        display: inline-block;
+        background-color: rgb(48, 0, 0);
+        cursor: pointer;
+        position: relative;
+        border-radius: 5px ;
+        color: aliceblue;
+        transition: 0.8s;
+    
+    }
+    .label_position_for_response:hover{
+    
+        background-color: red;
+    }
+    
+    .box_for_auxiliary_buttons{
+        
+        width: 13.6% ;
+        height: 35px;
+        display: inline-block;
+        background-color: #110101;
+        margin-left: 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        color: aliceblue;
+        align-content: center;
+        transition: 0.4s;
+        
+        
+    }
+    .box_for_auxiliary_buttons:hover{
+    
+        background-color: red;
+    }
+    .text_aling_in_auxiliary_box{
+        display: flex;
+        justify-content: center; /* Alinha horizontalmente */
+        align-items: center;
+    }
+    .box_next_and_return{
+        width: 14% ;
+    }
+    .external_box_that_gives_the_shape_to_the_console_of_inssues {
+        
+        width: 100%;
+        border: solid #8f0000;
+        background-color: #131212;
+        border-radius: 5px;
+        margin: 0;
+        padding: 20px; /* Adicione padding para espaçamento interno */
+        display: block; /* Permite que se ajuste ao conteúdo interno */
+        left: 5%;
+        box-shadow: 0 0 30px black;
+        position: relative;
+    }
+    
+    
+    .First_box_with_special_sreeding_of_top {
+        top: 50px !important;
+    }
+    
+    
+    
+    
+    
+    input[type="radio"] {
+        display: none;
+    }
+    
+    .create_div_on_the_question_console_for_the_contents_of_the_comments_response_anotation_statistical{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #070707;
+        z-index: 10; /* Coloca a div por cima do restante do conteúdo */
+        border-radius: 5px; 
+    }
+    .div_for_content_response{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+         /* Fundo semitransparente para destacar */
+        z-index: 15; /* Coloca a div por cima do restante do conteúdo */
+        border-radius: 5px
+    }
+    /*calculator******************************************************************************************************
+    *****************************************************************************************************************/
+    
+    .button_ativate_calculator{
+        z-index: 20;
+    }
+    
+    .box_that_gives_the_shape_to_the_calculator {
+        position: relative;
+        width: 50%;
+        height: 80%;
+        background-color: #111111;
+        border: 2px solid #8f0000;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto; /* Centraliza a calculadora */
+        z-index: 40;
+    }
+    
+    .div_that_gives_the_shape_to_the_numbers_contents_and_symbols {
+        width: 100%;
+        margin-top: 4%;
+        bottom: 0;
+        left: 0;
+        border-radius: 5px;
+        background-color: transparent; /* Corrigido */
+        display: block;
+        position: relative;
+    }
+    
+    .number_box_for_calculator {
+        width: 35%;
+        height: 80px; /* Reduzida para um tamanho mais apropriado */
+        background-color: red;
+        margin-bottom: 5%;
+        box-shadow: 0 0 15px black;
+        display: inline-block;
+        margin-left: 2.5%;
+    }
+    
+    .symbols_box_for_calculator {
+        width: 55%;
+        background-color: transparent; /* Corrigido */
+        margin-bottom: 5%;
+        box-shadow: 0 0 15px black;
+        display: inline-block;
+        margin-left: 5%;
+    }
+    
+    .button_of_zero_to_nine_for_calculator{
+        width: 20%;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 2px solid white;
+        color: aliceblue;
+        margin-top: 1.5px;
+        margin-left: 1.5px;
+        cursor: pointer;
+        font-size: 140%;
+    }
+    .button_of_zero_to_nine_for_calculator:hover{
+    
+        border: 1px solid yellow;
+        color: white;
+        box-shadow: 0 0 15px yellow;
+    
+    }
+    .button_calculator_clear_all{
+        width: 61%;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 2px solid white;
+        color: aliceblue;
+        margin-top: 1.5px;
+        margin-left: 1.5px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .button_calculator_clear_all:hover{
+        
+        border: 1px solid red;
+        color: white;
+        box-shadow: 0 0 15px red;
+    
+    }
+    .delete_hover_diferecial:hover{
+        border: 1px solid red !important;
+        color: white;
+        box-shadow: 0 0 15px red !important;
+    }
+    .div_for_feedback_screen_in_calculator{
+        width: 80%;
+        height: 40px;
+        background-color: #1f1e1e;
+        border-radius: 5px;
+        border: 2px solid rgb(255, 166, 0);
+        box-shadow: 0 0 10px  rgb(0, 0, 0);
+        left: 10%;
+        margin-top: 5%;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        padding: 5px;
+    }
+    .text_for_screen_feedback{
+        color: aliceblue;
+        text-align: right;
+    }
+    #button_delete{
+        z-index: 20;
+    }
+    
+    /*anotation*****************************************************************************************************
+    ****************************************************************************************************************/
+    
+    .box_for_anotacoes_space{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: none;
+        margin: none;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #000000;
+        border: none;
+        z-index: 5;
+        display: flex;
+    }
+    
+    .box_anotacoes{
+        position: absolute;
+        width: 80%;
+        height: 50%;
+        display: flex;
+        background-color: #000000;
+        border: 2px solid rgb(83, 83, 83);
+        padding: 0%;
+        margin: none;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 5px;
+    }
+    
+    .box_para_texto_anotacao_edit{
+        width: 15800%;
+        height: 99.5%;
+        position: relative;
+        background-color: none;
+        z-index: 5;
+        left: 90%;
+        transition: 1s;
+        top: 0.5%;
+        overflow: hidden;
+        display: none;
+    }
+    .box_para_texto_anotacao_edit_atv{
+        display: flex;
+    }
+    .box_slide_for_text_anotacao_edtit{
+        width: 100%;
+        height: 100%;
+        background-color: #1f1f1f;
+        position: absolute;
+        left: -100%;
+        transition: 1s;
+    }
+    .box_slide_for_text_anotacao_edtit_atv{
+        left:0%; 
+    }
+    .box_in_anotacao_slide_titulo{
+        width: 100%;
+        height: 15%;
+        position: absolute;
+        background-color: rgb(71, 71, 71);
+        font-family: "Playfair Display", serif;
+        color: aliceblue;
+        font-size: 150%;
+    }
+    .box_in_anotacao_slide_titulo_titulo{
+        height: 100%;
+        width: 20%;
+        background-color:none;
+        font-family: "Playfair Display", serif;
+        color: aliceblue;
+        font-size: 150%;
+    }
+    .for_text_area_in_slide_anotacao{
+        width: 90%;
+        height: 80%;
+        top: 15%;
+        position: absolute;
+        background-color: none;
+    }
+    .box_titulo_info_tag{
+        height: 100%;
+        width: 80%;
+        left: 20%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        color: whitesmoke;
+        
+    }
+    .box_for_ind_da_imp{
+        background-color: #8f0000;
+        width: 100%;
+        height: 5%;
+        position: absolute;
+        top: 95%;
+    }
+    .box_in_slide_anotaca_switch_imp{
+        height: 80%;
+        width: 10%;
+        display: block;
+        height: 80;
+        position: absolute;
+        background-color: #8f0000;
+        left:90% ;
+        top: 15%;
+    }
+    
+    .linha_vertical_estilizacao{
+        position: relative;
+        width: 2px;
+        height: 90%;
+        top: 5%;
+        left: 19%;
+    }
+    .linha_horizontal_superior_maior_estilizacao{
+        position: absolute;
+        width: 96.5%;
+        height: 2px;
+        left: 2.5%;
+        top: 2%;
+        border-top-right-radius: 8px;
+    }
+    .linha_vertical_estilizacao_menor_canto_direito{
+        position: absolute;
+        width: 4px;
+        height: 34%;
+        top: 2.4%;
+    
+        border-top-right-radius: 8px;
+        left: 97%;
+    }
+    .linha_horizontal_estilizacao_menor_canto_direito{
+        position: absolute;
+        width: 66.5%;
+        height: 2px;
+        top: 36.4%;
+    
+        border-top-right-radius: 8px;
+        left: 33.5%;
+    
+    }
+    .linha_vertical_estilizacao_maior_central{
+        width: 4px;
+        height: 96%;
+        position: absolute;
+        top: 2.5%;
+        left: 33%;
+    }
+    .color_estilizacao_anota_box{
+        background: #1d1d1d !important;
+    }
+    .box_ultimas_anotacoes{
+        width: 15vw;
+        background-color: none;
+        height: 76%;
+        display: block;
+        border: none;
+        border-radius: 5px;
+        background-color: none;
+        margin: none;
+        margin-top: 70px;
+        padding: 0%;
+        left: -2px;
+        position: absolute;
+        top: -2px;
+        overflow: visible;
+        overflow: hidden;
+        overflow: scroll;
+        overflow: auto;
+    }    
+    .box_ultimas_anotacoes::-webkit-scrollbar{
+        background-color:#131212;
+        width: 2px;
+    }
+    .box_ultimas_anotacoes::-webkit-scrollbar-thumb{
+        background-color: #ededed;
+        border-radius: 4px !important;
+    }
+    .box_anotacoes_feitas{
+        position: relative;
+        height: 40px;
+        width: 80%;
+        margin-top: 10%;
+        background-color: #080808;
+        border-radius: 5px;
+        border: 2px solid rgb(75, 75, 75);             /*box anotações feitas */
+        left: 10px;                                      /*indentifidas por cores*/   
+        display: flex;
+        color: rgb(255, 255, 255);
+    }
+    .box_anotacoes_feitas_quando_imp_red_atv{
+        border: 1px solid rgb(255, 0, 0);
+    
+    }
+    .box_anotacoes_feitas_quando_imp_green_atv{
+        border: 1px solid  rgb(2, 255, 15);
+    
+    }
+    .box_anotacoes_feitas_quando_imp_yellow_atv{
+        border:1px solid rgb(255, 238, 0); 
+    
+    }
+    .box_editar_mudar_imp_exclui{
+        width: 13.4%;
+        height: 90%;
+        position: absolute;
+        background-color:none;
+        left: 19.4%;
+        top: 6%;
+    }
+    .box_edicao_dentro_do_conj_editar{
+        width: 95%;
+        height: 15%;
+        position: relative;
+        margin-top: 2%;
+        background-color: #070707;
+        border-radius: 5px;
+        border: 2px solid rgb(116, 116, 116);
+    }
+    .box_edicao_dentro_do_conj_editar:hover{
+        background-color: rgb(88, 88, 88);
+        border: 3px solid whitesmoke;
+    }
+    .btn_excluir_anotacoes{
+        color: aliceblue;
+        font-size: 150%;
+        position: relative;
+        left: 3%;
+        top: 7%;
+        font-family: "Prompt", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    
+    }
+    .btn_editar_anotacoes{
+        color: aliceblue;
+        font-size: 150%;
+        position: relative;
+        left: 3%;
+        top: 7%;
+        font-family: "Prompt", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    
+    }
+    
+    .btn_trocarImportancia_anotacoes{
+        padding: none;
+        color: aliceblue;
+        font-size: 150%;
+        position: relative;
+        left: 3%;
+        top: 1%;
+        font-family: "Prompt", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    
+    }
+    
+    .titulo_in_anotacao{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        background-color:none;
+        
+    }
+    .hora_data_anotacao{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        background-color: none;
+        top: 50.5%;
+    }
+    .titulo_box_for_anotacoes{
+        font-size: 200%;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        color: aliceblue;
+        font-family: "Playfair Display", serif;
+    
+    }
+    .box_btn_cores{
+         width: 33vw;
+         height: 40px;
+         position: absolute;
+         left: 33.8%;
+         top: 6%;
+         background-color: rgb(17, 17, 17);
+         border: none;
+         border-radius: 5px;
+    }
+    .box_btn_titulo_anotacoes{
+        width: 33vw;
+         height: 40px;
+         position: relative;
+         left: 33.8%;
+         margin-top: 8%;
+         background-color: rgb(17, 17, 17);
+         border: none ;
+         border-radius: 5px;
+    }
+    
+    
+    
+    .box_for_text_area{
+        width: 45vw;
+         height: 57%;
+         position: absolute;
+         left: 33.8%;
+         top: 39%;
+         background-color: rgb(17, 17, 17);
+         border: 3px solid rgb(49, 49, 49)  ;
+         border-radius: 5px;
+    }
+    .box_for_text_area_atv_for_red{
+        border: 3px solid #f00 !important;
+    }    
+    .box_for_text_area_atv_for_green{
+        border: 3px solid  rgb(2, 255, 15) !important  ;
+    }
+    .box_for_text_area_atv_for_yellow{
+        border: 3px solid  rgb(255, 238, 0) !important; 
+    }
+    
+    
+    .imo_cr_red_btn{
+        background-color: rgb(143, 0, 0);
+        position: relative;
+        width: 40px;
+        height: 20px;
+        border: 2px solid rgb(71, 0, 0)  ;
+        left: 18%;
+        top: 5px;
+        border-radius: 15px;
+        cursor: pointer;
+    }    
+    .imo_cr_red_btn:hover{
+        background-color: rgb(255, 0, 0);
+    }
+    .atv_imo_red_btn{
+        background-color: rgb(255, 0, 0);
+    }
+    
+    .imo_cr_green_btn{
+        background-color: rgb(0, 119, 6);
+        position: relative;
+        width: 40px;
+        height: 20px;
+        border: 2px solid rgb(0, 49, 2);
+        left: 22%;
+        top: 5px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .imo_cr_green_btn:hover{
+        background-color:  rgb(2, 255, 15);
+    }
+    .atv_imo_green_btn{
+        background-color:  rgb(2, 255, 15);
+    }
+    
+    .imo_cr_yellow_btn{
+        background-color: rgb(141, 132, 0);
+        position: relative;
+        width: 40px;
+        height: 20px;
+        border: 2px solid rgb(85, 79, 0);
+        left: 20%;
+        top: 5px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .imo_cr_yellow_btn:hover{
+        background-color:rgb(255, 238, 0); 
+    }
+    .atv_imo_yellow_btn{
+        background-color:rgb(255, 238, 0); 
+    }
+    
+    .box_btn_cores_subtitulo{
+        background-color: none;
+        border: none;
+        width: 30%;
+        position:relative;
+        color: aliceblue;
+        left: 5px;
+        top: 4px;
+        font-size: 150%;
+        display: inline;
+        font-family: "Asap", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+    }
+    .input_anotacoes_titulo_class{
+        width: 75%;
+        position: relative;
+        left: 2%;
+        top: 3px;
+        color: #ffffff;
+        background-color: #131212;
+        border: 1px solid whitesmoke;
+        border-radius: 5px;
+    }
+    textarea{
+        position: absolute;
+        width: 99%;
+        height: 96.5%;
+        background-color: #1b1b1b;
+        color: aliceblue;
+    }
+    .bloqueia_textarea_class{
+        position: absolute;
+        width: 99%;
+        height: 100%;
+        background-color: none;
+        z-index: 3;
+    }
+    .bloqueia_textarea_class:hover{
+        background-color: #494949;
+    }
+    .desativa_bloqueia_textarea_class{
+        display: none;
+    }
+    .btn_adicionar_anotação_class{
+        position: relative;
+        width: 7vw;
+        height: 10vh;
+        top: 33px;
+        left: 36%;
+        background-color: #000000;
+        color: whitesmoke;
+        cursor: pointer;
+        font-family: "Asap", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+    }
+    .btn_adicionar_anotação_class:hover{
+        background-color: rgb(88, 88, 88);
+        border: 3px solid whitesmoke;
+    }
+    
+    .atv_btn_adicionar_anotação_class{
+        background-color: aliceblue;
+        color: #000000;
+    }
+    .ativado_anotacao_for_idn_edit{
+        background-color: aliceblue;
+        color: #000000;
+    }
+    
+    /*menu lateral direito*******************************************************************************************
+    *******************************************************************************************************************/
+    
+    .ativado_menu_lateral_direito{
+        background-color: #f00 !important;
+        border-radius: 5px;
+    }
+    .box_slide_menu_horizontal{
+        background-color: #f00;
+        width: 0%;
+        height: 2px !important;
+        position: fixed;
+        left: 73.7%;
+        top: 30px;
+        transition: 0.5s;
+        z-index: 10;
+    
+    }
+    .atv_box_slide_menu_horizontal{
+       
+        width: 21%;
+        display: flex !important;
+    }
+    .box_slide_menu_vertical{
+        background-color: #f00;
+        width: 2px;
+        height: 0vh ;
+        position: fixed;
+        left: 73.7%;
+        top: 30px;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .atv_box_slide_menu_vertical{
+        height: 90vh !important;
+    }
+    .box_slide_full_menu_lateral{
+        background: black;
+        width: 20%;
+        height: 87vh ;
+        position: fixed;
+        left: 74%;
+        top: 32px;
+        display: flex;
+        z-index: 50;
+        
+    }
+    
+    .desativa{
+        display: none;
+    }
+    .posiciona_text_in_menu_lateral_esq{
+        color: aliceblue;
+        position: absolute;
+        left: 20px;
+        top: 5px;
+        font-size: 200%;
+    }
+    .posiciona_box_menu_lateral_box_full_itens_primeiro{
+        color: aliceblue;
+        position: relative;
+        border: 2px solid rgb(116, 116, 116);
+        margin-top: 150px;
+        font-size: 150%;
+        left: 5px;
+        width: 90%;
+        height: 40px;
+        background-color: #070707;
+        border-radius: 5px;
+        font-family: "Prompt", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        cursor: pointer;
+        
+    }
+    .posiciona_box_menu_lateral_box_full_itens_primeiro:hover{
+        background-color: rgb(88, 88, 88);
+        border: 3px solid whitesmoke;
+    }
+    .posiciona_box_menu_lateral_box_full_itens{
+        color: aliceblue;
+       position: relative;
+       border: 2px solid rgb(116, 116, 116);
+        margin-top: 20px;
+        top: 100px;
+        font-size: 150%;
+        left: 5px;
+        width: 90%;
+        height: 40px;
+        background-color: none;
+        font-family: "Prompt", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        cursor: pointer;
+        
+        
+    }
+    .posiciona_box_menu_lateral_box_full_itens:hover{
+        background-color: rgb(88, 88, 88);
+        border: 3px solid whitesmoke;
+    }
+    .arrumando_position_box_esquerda{
+        position: relative;
+        display: inline;
+        width: 90vw;
+        height: 93vh;
+        padding: 0%;
+        
+    }
+    .ajeita_ajeita_text_itens_menu_lateral_esq{
+        position: absolute;
+        left: 5px;
+        top: 2px;
+    }
+    .titulo_menu_laterl_direito{
+        font-family: "Playfair Display", serif;
+        left: -15px !important;
+        display: block;
+        position: relative;
+        background-color: none;
+    }
+    .esmaecer_class{
+    
+        width: 88.5vw;
+        height: 100vw;
+        position: absolute;
+        background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+        z-index: 40;
+        left: 5.39%;
+        margin: none;
+        display: flex;
+        opacity: 0.7;
+        transition: 1s;
+        top: 0;
+    }
+}

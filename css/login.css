@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_o_monitor {
+    position: absolute;
+    left: 7%;
+    top: 1%;
+    font-size: 1.2rem;
+    font-family: "Yeseva One", serif;
+}
+
+h2 {
+    position: absolute;
+    top: 4%;
+    right: 50%;
+    transform: translateX(50%);
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 100;
+}
+
+.box_layout_1, .box_layout_2 {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+}
+
+.box_layout_1 {
+    z-index: 5;
+    background: linear-gradient(70deg, transparent 50%, #ff0000 50%);
+}
+
+.box_layout_2 {
+    z-index: 20;
+    background: linear-gradient(70deg, transparent 50%, #000000 50%);
+    left: 5vw;
+    top: 3vh;
+}
+
+.box_login_content_img {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(70deg, transparent 50%, #000000 50%);
+}
+
+.content_imagem_menor {
+    width: 70%;
+    height: 80%;
+    background-image: url(/imagens/projete-e-construa-conceito-preto-e-branco-dupla-exposicao-generative-ai-generative-ai_170984-7310.avif);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.form_box_login {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(70deg, transparent 50%, #000000 50%);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .titulo_o_monitor {
+        font-size: 1rem;
+        left: 3%;
+        top: 2%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .content_imagem_menor {
+        width: 90%;
+        height: 70%;
+    }
+
+    .box_layout_1, .box_layout_2 {
+        width: 95%;
+        height: 95%;
+    }
+
+    .box_layout_2 {
+        left: 3vw;
+        top: 2vh;
+    }
+
+    .input-elegante_1, .input-elegante_2 {
+        width: 80%;
+        right: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .titulo_o_monitor {
+        font-size: 0.9rem;
+        left: 2%;
+    }
+
+    .content_imagem_menor {
+        width: 100%;
+        height: 60%;
+    }
+
+    .box_layout_1, .box_layout_2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box_layout_2 {
+        left: 2vw;
+        top: 1vh;
+    }
+
+    .input-elegante_1, .input-elegante_2 {
+        width: 90%;
+        right: 5%;
+    }
+}
+
+/* Estilos para inputs elegantes */
+.input-elegante_1, .input-elegante_2 {
+    width: 30%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.input-elegante_1 {
+    top: 20%;
+    right: 15%;
+}
+
+.input-elegante_2 {
+    top: 30%;
+    right: 20%;
+}
+
+/* Estilo ao focar no input */
+input {
+    border: none;
+    border-bottom: 2px solid #ffc400;
+    padding: 8px 0;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    width: 70%;
+    background-color: none;
+    color: white;
+}
+
+input:focus {
+    border-bottom-color: #ff0000;
+}
+
+/* Caixa de menu lateral */
+.caixa_forma_para_menu_lateral {
+    width: 5.5%;
+    height: 100vh;
+    background-color: #131212;
+    border-radius: 5px;
+    border: 2px solid rgb(95, 95, 95);
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 40px black;
+    z-index: 50;
+}
+
+.esquerda {
+    left: 0;
+}
+
+.caixas_para_quardar_icones_imagens_png {
+    width: 95%;
+    height: 12%;
+    margin-top: 10%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.caixas_para_quardar_icones_imagens_png:hover {
+    border: 2px solid red;
+    box-shadow: 0 0 10px red;
+}
+
+.full_screen {
+    margin-top: 630%;
+}
+
+.img_class_box_lateral {
+    transform: scale(3);
+    transform-origin: center;
+}
+
+img {
+    width: 100%;
+    max-width: 500px; /* Limite o tamanho máximo */
+    height: auto;
+ }

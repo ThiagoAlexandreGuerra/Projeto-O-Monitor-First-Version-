@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.caixas_para_quardar_icones_imagens_png {
+    width: 95%;
+    height: 10%;
+    background-color: antiquewhite;
+    margin-top: 10%;
+    display: block;
+    border-radius: 5px;
+}
+
+.esquerda {
+    left: 0; /* Fixar no lado esquerdo */
+}
+
+.direita {
+    right: 0; /* Fixar no lado direito */
+}
+
+.caixa_forma_para_menu_lateral {
+    width: 5.5%;
+    height: 100vh;
+    background-color: rgba(46, 46, 46, 0.795);
+    border-radius: 5px;
+    border: 2px solid rgb(95, 95, 95);
+    position: fixed;
+    top: 0; /* Garantir que estejam ancorados no topo */
+}
